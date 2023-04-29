@@ -1,0 +1,68 @@
+.headerContainer{
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+
+}
+
+.menu p, .rightMenu p {
+    font-weight: 600;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+}
+
+.rightMenu{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.burgerMenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    width: 35vw;
+    z-index: 10;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.5s ease;
+}
+
+.close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burgerMenu li{
+    border-bottom: solid 1px grey;
+    font-weight: 600;
+    margin: 5vh 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .menu{
+        display: none;
+    }
+  }

@@ -1,0 +1,68 @@
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.itemText{
+    text-align: center;
+    padding-top: 15vh;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.leftButton{
+    text-transform: uppercase;
+}
+
+.rightButton{
+    background-color: white;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+
+.arrow{
+    height: 40px;
+    animation: DownArrow 1s infinite;
+}
+
+@keyframes DownArrow {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(1vh);
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .buttonsGroup{
+        flex-direction: column;
+    }
+  }
